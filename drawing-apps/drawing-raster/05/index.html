@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+
+  <title>Canvas drawing</title>
+
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+  
+  <!-- Note how no canvas is needed here, p5.js will place one -->
+  <!-- If you want finer control of where your canvas element goes, see: https://github.com/processing/p5.js/wiki/Positioning-your-canvas#relocating-the-canvas -->
+
+  <div id="canvas-container">
+
+  </div>
+
+  <div id="controls">
+    <div class="slider-container">
+      <input type="range" min="0" max="100" value="10" class="slider" id="slider-radius">
+      <input type="range" min="0" max="100" value="100" class="slider" id="slider-color">
+      <input type="range" min="0" max="100" value="30" class="slider" id="slider-angle">
+    </div>
+  </div>
+
+  <!-- Use full p5.js library when developing locally -->
+  <script type="text/javascript" src="js/p5.js"></script>
+  
+  <!-- Switch to minified version when deploying for production/use -->
+  <!-- <script type="text/javascript" src="js/p5.min.js"></script> -->
+  
+  <script type="text/javascript" src="js/sketch.js"></script>
+
+</body>
+
+</html>
